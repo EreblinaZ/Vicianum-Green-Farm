@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+}
+
+#ballina{
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/1a.jpg); 
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        width: 100%;
+        height: 525px;
+        margin-top: 85px;
+
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes animate{
+        0%   {   
+         background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/1a.jpg);
+        }
+        25%  {
+         background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/2a.jpg);
+        }  
+        50%  {     
+         background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../images/3a.jpg);
+        }
+        100% {        
+         background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/4a.jpg);
+        }   
+    }
+
+    #miresevini {
+        margin-top:-350px; 
+        text-align: center; 
+        color: white;
+        font-weight: bold;
+    }
+    .hyrje {
+        background:rgba(100, 100, 100, 0.6); 
+        font-size: 40px;
+    }
+
+    .n100 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    #shkrime{
+        color: white;
+        margin-top: 240px;
+        font-size: 21px;
+    }
+
+    .tekst h2 {
+        text-align: center;
+    }
+
+    .tekst {
+        text-align: justify;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #shkrime img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .shfaqe1, .shfaqe2, .shfaqe3, .shfaqe4, .shfaqe5, .shfaqe6 {
+        display: flex;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #shkrime img{
+            width:100%;
+            height: 50%;
+        }
+        .shfaqe1, .shfaqe3, .shfaqe5{
+            display: block;
+        }
+
+        .shfaqe2, .shfaqe4, .shfaqe6 {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        #shkrime img{
+            width:100%;
+            height: 100%;
+        }
+        .shfaqe1, .shfaqe3, .shfaqe5{
+            display: block;
+        }
+
+        .shfaqe2, .shfaqe4, .shfaqe6 {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .hyrje {
+            font-size: 25px;
+        }
+    
+        .n100 {
+            font-size: 17px;
+        }
+    
+        #shkrime{
+            font-size: 17px;
+        }
+
+        #ballina {
+            height: 630px;
+        }
+    }

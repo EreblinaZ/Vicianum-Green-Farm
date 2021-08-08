@@ -1,0 +1,320 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 87px;
+    background-color: rgb(14, 14, 14);
+    line-height: 75px;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav img {
+    width: 140px;
+    height: 70px;
+    margin-top: 3px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin-top: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px 35px;
+    letter-spacing: 1px;
+
+    font-family:'HK Super Round Bold';
+    font-weight:bold;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'HK Super Round Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Super Round Bold'), url('../fonts/HKSuperRound-Bold.woff') format('woff');
+}
+
+nav ul li a:hover{
+    color: #59b390;
+}
+
+.btnMenu{
+    color:#fff;
+    font-size: 25px;
+    cursor:pointer;
+    float: right;
+    display: none;   
+}
+
+#kontrollo{
+    display: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    font-family: "Poppins", sans-serif;
+}
+
+.left img{
+    width: 150px;
+    height: 80px;
+    margin-bottom: 7px;
+}
+
+.main-footer{
+    display: flex;
+    padding: 15px;
+}
+
+.main-footer .box {
+    flex-basis: 50%;
+    padding: 10px 35px;
+}
+
+.box {
+    color: white;
+    font-size: 20px;
+}
+
+.box h2 {
+    text-transform: uppercase;
+}
+
+.adresa div{
+    margin-bottom:5px ;
+}
+
+.adresa .txt1{
+    margin-left: 20px;
+}
+
+.adresa .txt2{
+    margin-left: 11px;
+}
+
+.adresa .txt3{
+    margin-left: 14px;
+}
+
+.adresa .txt4{
+    margin-left: 15px;
+}
+
+.adresa i{
+    font-size: 22px;
+    padding: 7px;
+}
+
+.center p {
+padding: 3px;
+}
+
+.social ul{
+   list-style-type: none;
+   display: flex;
+   text-align: center;
+}
+
+.social {
+    margin-top: 50px;
+}
+
+.social ul li{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: white;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    box-shadow: 3px 8px 6px 2px #7c7c7c;
+    transition: all .2s ease-in-out;
+}
+
+.social ul li:hover{
+    transform: translateY(-15px) scale(1.2);
+}
+
+
+.facebook{
+    color: #3b5998;
+}
+
+.instagram{
+    color: #bc2a8d;
+}
+
+.twitter{
+    color: #00aced;
+}
+
+.linkedin{
+    color: #1575e2;
+}
+
+.reddit{
+    color: #eb5600;
+} 
+
+.copyright{
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    padding: 10px;
+    color: white;
+}
+
+.cookie-container {
+    position: fixed;
+    z-index: 1;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #1b1b1b;
+    color: #f5f6fa;
+    padding: 13px 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+    transition: 400ms;
+  }
+
+  .cookie-container p {
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 15px;
+  }
+  
+  .cookie-container.active {
+    bottom: 0;
+  }
+  
+  .cookie-container a {
+    color: #f5f6fa;
+  }
+  
+  .cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 1024px){
+    .main-footer .box {
+        padding: 15px 13px;
+        font-size: 15px;
+    }
+    .adresa{
+        margin-left: -15px;
+    }
+    .adresa .txt1{
+        margin-left: 13px;
+    }
+    
+    .adresa .txt2{
+        margin-left: 4px;
+    }
+    
+    .adresa .txt3{
+        margin-left: 7px;
+    }
+    
+    .adresa .txt4{
+        margin-left: 8px;
+    }
+    
+    .adresa i{
+        font-size: 17px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    nav{
+        padding: 0px 50px;
+    }
+
+    .btnMenu{
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(14, 14, 14);
+        position: fixed;
+        top:75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+    }
+
+    #kontrollo:checked ~ ul {
+        left: 0;
+    }
+
+    .main-footer{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .left img{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .main-footer{
+        display: block;
+    }
+
+    .main-footer .box {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .social ul li{
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+    }
+}
