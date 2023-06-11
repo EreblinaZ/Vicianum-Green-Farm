@@ -8,6 +8,6 @@ This website is made for "ICT for Kosovo's Growth" training purposes.
 The website is responsive. The structure of the website is created using HTML, CSS and JavaScript.
 
 
-## Contributing 
+## Deployed on Netlify
 
-Pull requests are welcome.
+https://vicianumgreenfarm.netlify.app/
